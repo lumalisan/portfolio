@@ -13,18 +13,22 @@ import { useClickAway } from '@uidotdev/usehooks';
 const navLinks = [
   {
     id: 'about',
+    number: '01.',
     title: 'About',
   },
   {
     id: 'experience',
+    number: '02.',
     title: 'Experience',
   },
   {
     id: 'projects',
+    number: '03.',
     title: 'Projects',
   },
   {
     id: 'contact',
+    number: '04.',
     title: 'Contact',
   },
 ];
@@ -65,7 +69,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav item list */}
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+        <ul className="list-none hidden sm:flex flex-row gap-8 mt-2">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -76,7 +80,10 @@ const Navbar = () => {
                 )
               }
               onClick={() => setActive(nav.title)}>
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
+              <Link href={`#${nav.id}`}>
+                <span className='text-beige'>{nav.number}{' '}</span>
+                {nav.title}
+              </Link>
             </li>
           ))}
         </ul>
@@ -145,7 +152,7 @@ const Navbar = () => {
                     className={
                       classNames(
                         active === nav.title ? 'text-beige' : 'text-black',
-                        'text-6xl font-bold'
+                        'text-5xl font-bold'
                       )
                     }
                     variants={itemVariants}
@@ -154,7 +161,10 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    <Link href={`#${nav.id}`}>{nav.title}</Link>
+                    <Link href={`#${nav.id}`}>
+                      <span className='text-beige'>{nav.number}{' '}</span>
+                      {nav.title}
+                    </Link>
                   </motion.li>
                 ))}
               </ul>
