@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         {/* Scrolling Animated Btn */}
-        <div className="absolute md:bottom-10 sm:bottom-52 bottom-32 w-full flex justify-center items-center">
+        <div className="absolute md:bottom-10 sm:bottom-52 bottom-24 w-full flex justify-center items-center">
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 border-beige flex justify-center items-start p-2">

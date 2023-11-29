@@ -50,7 +50,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className={'sm:px-16 px-6 w-full flex items-center py-2 fixed top-0 z-20 bg-blue sm:opacity-[0.97] xxs:h-[12vh]'}>
+    <nav className={'lg:px-16 px-6 w-full flex items-center py-2 fixed top-0 z-20 bg-blue opacity-[0.97] xxs:h-[12vh]'}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Link with logo */}
         <Link
@@ -69,14 +69,14 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav item list */}
-        <ul className="list-none hidden sm:flex flex-row gap-8 mt-2">
+        <ul className="list-none hidden lg:flex flex-row gap-8 mt-2">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={
                 classNames(
                   active === nav.title ? 'text-beige' : 'text-black',
-                  'hover:text-beige text-2xl font-medium font-mova tracking-[3px] cursor-pointer nav-links'
+                  'hover:text-beige text-2xl font-medium font-mova tracking-[3px] cursor-pointer nav-links whitespace-nowrap'
                 )
               }
               onClick={() => setActive(nav.title)}>
@@ -91,13 +91,13 @@ const Navbar = () => {
         {/* Mobile nav item list */}
         <AnimatePresence>
           <motion.div
-            className="sm:hidden flex flex-1 w-screen justify-end items-center"
+            className="lg:hidden flex flex-1 w-screen justify-end items-center"
             animate={toggle ? 'open' : 'closed'}
             initial={false}
           >
             {/*  <!--  Start Dropdown trigger --> */}
             <div
-              className="text-2xl text-black object-contain cursor-pointer"
+              className="sm:text-3xl text-2xl text-black object-contain cursor-pointer"
               onClick={() => setToggle(!toggle)}
             >
               <FontAwesomeIcon icon={faBars} />
@@ -107,12 +107,7 @@ const Navbar = () => {
             <motion.div
               //@ts-ignore
               ref={clickAwayRef}
-              className={
-                classNames(
-                  toggle ? 'menu-open' : 'menu-close',
-                  'p-6 bg-blue opacity-[0.98] absolute top-0 left-0 w-screen h-[100vh] z-10 menu'
-                )
-              }
+              className={'p-6 bg-blue absolute top-0 left-0 w-screen h-[100vh] z-10 menu'}
               variants={{
                 open: {
                   clipPath: 'circle(100.0% at 90% 5%)',
@@ -138,7 +133,7 @@ const Navbar = () => {
               {/* Close Icon */}
               <div className="flex justify-end">
                 <div
-                  className="text-4xl text-black object-contain"
+                  className="sm:text-5xl text-4xl text-black object-contain"
                   onClick={() => setToggle(!toggle)}
                 >
                   <FontAwesomeIcon icon={faXmark} />
@@ -152,7 +147,7 @@ const Navbar = () => {
                     className={
                       classNames(
                         active === nav.title ? 'text-beige' : 'text-black',
-                        'text-5xl font-bold'
+                        'sm:text-6xl text-[40px] sm:leading-[5rem] leading-10 whitespace-nowrap font-bold'
                       )
                     }
                     variants={itemVariants}

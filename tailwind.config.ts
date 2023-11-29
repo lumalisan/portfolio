@@ -26,7 +26,7 @@ const config: Config = {
       },
       backgroundImage: {
         hero: 'linear-gradient(135deg, #F5E8C7 60%, #435585 60%)',
-        'hero-mobile': 'linear-gradient(137deg, #F5E8C7 60%, #435585 60%)',
+        'hero-mobile': 'linear-gradient(150deg, #F5E8C7 65%, #435585 60%)',
 
         experience: "linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
         experienceLight: 'linear-gradient(137deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.9) 60%)',
