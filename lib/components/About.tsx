@@ -1,38 +1,43 @@
 'use client'
 
-import { faHtml5, faCss3, faJs, faReact, faNodeJs, fa500px } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link';
 import TechCard from './TechCard';
+import { faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { astroIcon, mongoDbIcon, nextJsIcon, tailwindCssIcon, typeScriptIcon } from '@/assets/icons';
 
 const technologies = [
-  {
-    title: 'HTML 5',
-    icon: faHtml5,
-  },
-  {
-    title: 'CSS 3',
-    icon: faCss3,
-  },
   {
     title: 'JavaScript',
     icon: faJs,
   },
   {
     title: 'TypeScript',
-    icon: fa500px,
+    icon: typeScriptIcon,
   },
   {
-    title: 'React JS',
+    title: 'React',
     icon: faReact,
   },
   {
-    title: 'Tailwind CSS',
-    icon: fa500px,
+    title: 'Next.js',
+    icon: nextJsIcon,
   },
   {
-    title: 'Node JS',
+    title: 'Tailwind CSS',
+    icon: tailwindCssIcon,
+  },
+  {
+    title: 'Node.js',
     icon: faNodeJs,
-  }
+  },
+  {
+    title: 'MongoDB',
+    icon: mongoDbIcon,
+  },
+  {
+    title: 'Astro',
+    icon: astroIcon,
+  },
 ];
 
 const About = () => {
@@ -59,9 +64,7 @@ const About = () => {
         In addition to my professional experiences, I&apos;ve embarked on various personal projects,
         aimingto enhance my abilities and delve into emerging web technologies. This dynamic blend of
         academic background, professional engagement, and personal exploration fuels my passion for
-        creating innovative and impactful web solutions. I&apos;m excited about the ever-evolving landscape
-        of web development and committed to building on my experiences to craft accessible and
-        cutting-edge digital products.
+        creating innovative and impactful web solutions.
         <br/><br/>
         Here are a few technologies I&apos;ve been working with recently:
       </p>
