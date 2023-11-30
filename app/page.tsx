@@ -8,7 +8,7 @@ export default function Home() {
           <Hero />
         </div>
 
-        <div className="bg-purple">
+        <div className="bg-purple" id={'about'}>
           <About />
         </div>
 
