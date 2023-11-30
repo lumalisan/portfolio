@@ -1,4 +1,4 @@
-import { About, Hero, Navbar } from "@/lib/components";
+import { About, Hero, Navbar, Experience } from "@/lib/components";
 
 export default function Home() {
   return (
@@ -9,12 +9,12 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div id="about" className="bg-purple">
+      <div id="about">
         <About />
       </div>
 
       <div id="experience">
-        {/* <Experience /> */}
+        <Experience />
       </div>
 
       <div id="projects">

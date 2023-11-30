@@ -20,10 +20,10 @@ const Hero = () => {
             <h1 className={'text-navy font-medium lg:text-xl md:text-lg sm:text-md text-base mt-2'}>
               Hi, my name is{' '}
             </h1>
-            <h2 className={'text-black font-bold lg:text-7xl md:text-5xl sm:text-4xl text-3xl lg:leading-[5rem] mt-2 font-poppins'}>
+            <h2 className={'text-black font-black lg:text-7xl md:text-5xl sm:text-4xl text-3xl lg:leading-[5rem] mt-2 font-poppins'}>
               Lisandro Rocha.
             </h2>
-            <h3 className={'text-black/90 font-bold lg:text-7xl md:text-5xl sm:text-4xl text-3xl lg:leading-[5rem] mt-2 font-poppins'}>
+            <h3 className={'text-black/90 font-black lg:text-7xl md:text-5xl sm:text-4xl text-3xl lg:leading-[5rem] mt-2 font-poppins'}>
               I build things for the web.
             </h3>
             <p className={'text-black/90 font-medium lg:text-xl md:text-lg sm:text-md text-base mt-2'}>
@@ -56,6 +56,7 @@ const Hero = () => {
         {/* Personal Image */}
         <div>
           <Image
+            priority
             src={lisandroRochaTau}
             alt="Lisandro Rocha portait"
             className="absolute bottom-0 ml-[45vw] 
