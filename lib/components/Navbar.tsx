@@ -76,7 +76,7 @@ const Navbar = () => {
               className={
                 classNames(
                   active === nav.title ? 'text-beige' : 'text-black',
-                  'hover:text-beige text-2xl font-medium font-mova tracking-[3px] cursor-pointer nav-links whitespace-nowrap'
+                  'hover:text-beige text-2xl font-medium tracking-wide cursor-pointer nav-links whitespace-nowrap transition duration-300'
                 )
               }
               onClick={() => setActive(nav.title)}>
@@ -87,6 +87,14 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <button
+          onClick={() => window.open('/resume.pdf', '_blank')}
+          className="p-2 text-2xl text-black font-semibold tracking-wide border-2 border-black
+                  hover:text-beige hover:border-beige hover:shadow-md hover:shadow-beige
+                    hover:-translate-y-1 rounded-lg whitespace-nowrap transition duration-300 lg:block hidden"
+        >
+          Resume
+        </button>
 
         {/* Mobile nav item list */}
         <AnimatePresence>
@@ -147,7 +155,7 @@ const Navbar = () => {
                     className={
                       classNames(
                         active === nav.title ? 'text-beige' : 'text-black',
-                        'sm:text-6xl text-[40px] sm:leading-[5rem] leading-10 whitespace-nowrap font-bold'
+                        'sm:text-6xl text-[40px] sm:leading-[5rem] leading-10 tracking-wide whitespace-nowrap font-bold'
                       )
                     }
                     variants={itemVariants}
@@ -162,6 +170,16 @@ const Navbar = () => {
                     </Link>
                   </motion.li>
                 ))}
+                <motion.li variants={itemVariants}>
+                  <button
+                    onClick={() => window.open('/resume.pdf', '_blank')}
+                    className="p-2 sm:text-6xl text-[40px] text-black font-bold sm:leading-[5rem] leading-10 tracking-wide
+                              border-4 border-black hover:text-beige hover:border-beige hover:shadow-md hover:shadow-beige
+                              hover:-translate-y-1 rounded-lg whitespace-nowrap transition duration-300"
+                  >
+                    Resume
+                  </button>
+                </motion.li>
               </ul>
             </motion.div>
             {/*  <!-- End Menu list --> */}
