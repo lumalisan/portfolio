@@ -1,10 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './lib/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './lib/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -12,7 +9,7 @@ const config: Config = {
         navy: '#435585',
         blue: '#818FB4',
         beige: '#F5E8C7',
-        black: '#292929'
+        black: '#292929',
       },
       screens: {
         xs: '450px',
@@ -26,15 +23,11 @@ const config: Config = {
       },
       backgroundImage: {
         hero: 'linear-gradient(135deg, #F5E8C7 60%, #435585 60%)',
-        'hero-mobile': 'linear-gradient(150deg, #F5E8C7 65%, #435585 60%)'
-      }
+        'hero-mobile': 'linear-gradient(150deg, #F5E8C7 65%, #435585 60%)',
+      },
     },
   },
-  safelist: [
-    'text-purple',
-    'text-purple/50',
-    'text-beige/50',
-  ],
+  safelist: ['text-purple', 'text-purple/50', 'text-beige/50'],
   plugins: [],
-}
-export default config
+};
+export default config;

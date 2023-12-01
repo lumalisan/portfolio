@@ -1,7 +1,7 @@
-import type { Metadata } from 'next'
-import localFont from 'next/font/local'
-import './globals.css'
-import 'react-vertical-timeline-component/style.min.css'
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
+import 'react-vertical-timeline-component/style.min.css';
 
 const circularStd = localFont({
   src: [
@@ -33,21 +33,21 @@ const circularStd = localFont({
   ],
   preload: true,
   display: 'swap',
-})
+});
 
 export const metadata: Metadata = {
   title: 'Lisandro Rocha',
   description: 'Full-stack Developer Portfolio',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={circularStd.className}>{children}</body>
     </html>
-  )
+  );
 }

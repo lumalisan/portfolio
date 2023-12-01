@@ -1,19 +1,19 @@
-import { MutableRefObject, ReactElement } from 'react'
+import { MutableRefObject, ReactElement } from 'react';
 
 interface Props {
-    children: ReactElement | ReactElement[];
-    sectionRef?: MutableRefObject<any>;
+  children: ReactElement | ReactElement[];
+  sectionRef?: MutableRefObject<any>;
 }
 
 const SectionLayout = ({ children, sectionRef }: Props) => {
-    return (
-        <div
-            ref={sectionRef}
-            className="max-w-4xl mx-auto relative z-0 sm:px-16 px-6 sm:py-40 py-24"
-        >
-            {children}
-        </div>
-    )
-}
+  return (
+    <div
+      ref={sectionRef}
+      className='relative z-0 mx-auto max-w-4xl px-6 py-24 sm:px-16 sm:py-40'
+    >
+      {children}
+    </div>
+  );
+};
 
-export default SectionLayout
+export default SectionLayout;

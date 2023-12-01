@@ -31,14 +31,20 @@ html {
 /* Custom line gradient near hero title */
 .bw-gradient {
   background: rgb(10, 10, 10);
-  background: linear-gradient(180deg,
-      rgba(10, 10, 10, 0.8) 40%,
-      rgba(153, 153, 161, 0) 70%);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.8) 40%,
+    rgba(153, 153, 161, 0) 70%
+  );
 }
 
 /* Custom timeline line CSS */
 .vertical-timeline.vertical-timeline-custom-line::before {
-  background: linear-gradient(180deg, #363062 70%, rgba(234, 234, 236, 0.45) 100%);
+  background: linear-gradient(
+    180deg,
+    #363062 70%,
+    rgba(234, 234, 236, 0.45) 100%
+  );
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -64,5 +70,5 @@ html {
 }
 
 *::-webkit-scrollbar-button {
-  display:none;
+  display: none;
 }

@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import classNames from 'classnames'
+import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { logotext } from '@/assets';
@@ -15,9 +15,9 @@ const itemVariants: Variants = {
   open: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 }
+    transition: { type: 'spring', stiffness: 300, damping: 24 },
   },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
 const Navbar = () => {
@@ -28,12 +28,16 @@ const Navbar = () => {
   });
 
   return (
-    <nav className={'lg:px-16 px-6 w-full flex items-center py-2 fixed top-0 z-20 bg-blue opacity-[0.97] xxs:h-[12vh]'}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+    <nav
+      className={
+        'xxs:h-[12vh] fixed top-0 z-20 flex w-full items-center bg-blue px-6 py-2 opacity-[0.97] lg:px-16'
+      }
+    >
+      <div className='mx-auto flex w-full max-w-7xl items-center justify-between'>
         {/* Link with logo */}
         <Link
-          href="#intro"
-          className="flex items-center gap-2"
+          href='#intro'
+          className='flex items-center gap-2'
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
@@ -41,25 +45,24 @@ const Navbar = () => {
         >
           <Image
             src={logotext}
-            alt="logo"
-            className="sm:w-[150px] w-[100px] -ml-[0.6rem] object-contain"
+            alt='logo'
+            className='-ml-[0.6rem] w-[100px] object-contain sm:w-[150px]'
           />
         </Link>
 
         {/* Desktop nav item list */}
-        <ul className="list-none hidden lg:flex flex-row gap-8 mt-2">
+        <ul className='mt-2 hidden list-none flex-row gap-8 lg:flex'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={
-                classNames(
-                  active === nav.title ? 'text-beige' : 'text-black',
-                  'hover:text-beige text-2xl font-medium tracking-wide cursor-pointer nav-links whitespace-nowrap transition duration-300'
-                )
-              }
-              onClick={() => setActive(nav.title)}>
+              className={classNames(
+                active === nav.title ? 'text-beige' : 'text-black',
+                'nav-links cursor-pointer whitespace-nowrap text-2xl font-medium tracking-wide transition duration-300 hover:text-beige'
+              )}
+              onClick={() => setActive(nav.title)}
+            >
               <Link href={`#${nav.id}`}>
-                <span className='text-beige'>{nav.number}{' '}</span>
+                <span className='text-beige'>{nav.number} </span>
                 {nav.title}
               </Link>
             </li>
@@ -67,9 +70,9 @@ const Navbar = () => {
         </ul>
         <button
           onClick={() => window.open('/resume.pdf', '_blank')}
-          className="p-2 text-2xl text-black font-semibold tracking-wide border-2 border-black
-                    hover:shadow-md hover:shadow-black hover:-translate-y-1 rounded-lg
-                    whitespace-nowrap transition duration-300 lg:block hidden"
+          className='hidden whitespace-nowrap rounded-lg border-2 border-black p-2 text-2xl
+                    font-semibold tracking-wide text-black transition
+                    duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-black lg:block'
         >
           Resume
         </button>
@@ -77,13 +80,13 @@ const Navbar = () => {
         {/* Mobile nav item list */}
         <AnimatePresence>
           <motion.div
-            className="lg:hidden flex flex-1 w-screen justify-end items-center"
+            className='flex w-screen flex-1 items-center justify-end lg:hidden'
             animate={toggle ? 'open' : 'closed'}
             initial={false}
           >
             {/*  <!--  Start Dropdown trigger --> */}
             <div
-              className="sm:text-3xl text-2xl text-black object-contain cursor-pointer"
+              className='cursor-pointer object-contain text-2xl text-black sm:text-3xl'
               onClick={() => setToggle(!toggle)}
             >
               <FontAwesomeIcon icon={faBars} />
@@ -93,7 +96,9 @@ const Navbar = () => {
             <motion.div
               //@ts-ignore
               ref={clickAwayRef}
-              className={'p-6 bg-blue absolute top-0 left-0 w-screen h-[100vh] z-10 menu'}
+              className={
+                'menu absolute left-0 top-0 z-10 h-[100vh] w-screen bg-blue p-6'
+              }
               variants={{
                 open: {
                   clipPath: 'circle(100.0% at 90% 5%)',
@@ -102,40 +107,38 @@ const Navbar = () => {
                     bounce: 0,
                     duration: 0.5,
                     delayChildren: 0.1,
-                    staggerChildren: 0.05
-                  }
+                    staggerChildren: 0.05,
+                  },
                 },
                 closed: {
                   clipPath: 'circle(0% at 90% 5%)',
                   transition: {
                     type: 'spring',
                     bounce: 0,
-                    duration: 0.2
-                  }
-                }
+                    duration: 0.2,
+                  },
+                },
               }}
               style={{ pointerEvents: toggle ? 'auto' : 'none' }}
             >
               {/* Close Icon */}
-              <div className="flex justify-end">
+              <div className='flex justify-end'>
                 <div
-                  className="sm:text-5xl text-4xl text-black object-contain"
+                  className='object-contain text-4xl text-black sm:text-5xl'
                   onClick={() => setToggle(!toggle)}
                 >
                   <FontAwesomeIcon icon={faXmark} />
                 </div>
               </div>
               {/* Links list */}
-              <ul className="list-none flex flex-col gap-[2rem] items-end justify-end mt-[1rem]">
+              <ul className='mt-[1rem] flex list-none flex-col items-end justify-end gap-[2rem]'>
                 {navLinks.map((nav) => (
                   <motion.li
                     key={nav.id}
-                    className={
-                      classNames(
-                        active === nav.title ? 'text-beige' : 'text-black',
-                        'sm:text-6xl text-[40px] sm:leading-[5rem] leading-10 tracking-wide whitespace-nowrap font-bold'
-                      )
-                    }
+                    className={classNames(
+                      active === nav.title ? 'text-beige' : 'text-black',
+                      'whitespace-nowrap text-[40px] font-bold leading-10 tracking-wide sm:text-6xl sm:leading-[5rem]'
+                    )}
                     variants={itemVariants}
                     onClick={() => {
                       setToggle(!toggle);
@@ -143,7 +146,7 @@ const Navbar = () => {
                     }}
                   >
                     <Link href={`#${nav.id}`}>
-                      <span className='text-beige'>{nav.number}{' '}</span>
+                      <span className='text-beige'>{nav.number} </span>
                       {nav.title}
                     </Link>
                   </motion.li>
@@ -151,10 +154,10 @@ const Navbar = () => {
                 <motion.li variants={itemVariants}>
                   <button
                     onClick={() => window.open('/resume.pdf', '_blank')}
-                    className="p-2 sm:text-6xl text-[40px] text-black font-bold sm:leading-[5rem]
-                              leading-10 tracking-wide border-4 border-black hover:shadow-md
-                              hover:shadow-black hover:-translate-y-1 rounded-lg
-                              whitespace-nowraptransition duration-300"
+                    className='whitespace-nowraptransition rounded-lg border-4 border-black p-2 text-[40px]
+                              font-bold leading-10 tracking-wide text-black duration-300
+                              hover:-translate-y-1 hover:shadow-md hover:shadow-black
+                              sm:text-6xl sm:leading-[5rem]'
                   >
                     Resume
                   </button>

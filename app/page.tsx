@@ -1,36 +1,36 @@
-import { 
+import {
   About,
   Contact,
   Experience,
   Hero,
   Navbar,
   Projects,
-} from "@/lib/components";
+} from '@/lib/components';
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <div id="intro">
+      <div id='intro'>
         <Hero />
       </div>
 
-      <div id="about">
+      <div id='about'>
         <About />
       </div>
 
-      <div id="experience">
+      <div id='experience'>
         <Experience />
       </div>
 
-      <div id="projects">
+      <div id='projects'>
         <Projects />
       </div>
 
-      <div id="contact">
+      <div id='contact'>
         <Contact />
       </div>
     </>
-  )
+  );
 }

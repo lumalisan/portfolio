@@ -5,11 +5,4 @@ import Hero from './Hero';
 import Navbar from './Navbar';
 import Projects from './Projects';
 
-export { 
-    About,
-    Contact,
-    Experience,
-    Hero,
-    Navbar,
-    Projects,
-};
+export { About, Contact, Experience, Hero, Navbar, Projects };
