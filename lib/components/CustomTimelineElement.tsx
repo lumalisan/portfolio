@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
 import { memo, useRef } from 'react';
 import { useInView } from 'framer-motion';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { useMediaQuery } from '@uidotdev/usehooks';
 import classNames from 'classnames';
+import useBetterMediaQuery from '../hooks/useMediaQuery';
 
 interface Props {
   date: string;
@@ -30,7 +30,7 @@ const CustomTimelineElement = ({
     once: true,
     amount: 0.5,
   });
-  const isSmallDevice = useMediaQuery('only screen and (max-width : 1170px)');
+  const isSmallDevice = useBetterMediaQuery('only screen and (max-width : 1170px)');
 
   return (
     <div ref={ref} className='mb-5'>
