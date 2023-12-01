@@ -15,7 +15,7 @@ const TechCard = ({ title, icon }: Props) => {
 
   return (
     <div
-      className='flex min-h-[10rem] w-full flex-col items-center justify-center gap-3 rounded-3xl border-2
+      className='reveal-animation flex min-h-[10rem] w-full flex-col items-center justify-center gap-3 rounded-3xl border-2
         border-beige bg-navy text-center text-beige transition duration-300 hover:-translate-y-1 hover:bg-transparent hover:shadow-md hover:shadow-beige xs:w-[10rem]'
     >
       {isIconDefinition(icon) ? (

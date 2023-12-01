@@ -39,7 +39,7 @@ const About = () => {
           Here are a few technologies I&apos;ve been working with recently:
         </p>
 
-        <div className='reveal-animation mt-6 flex flex-wrap gap-2 xs:gap-8'>
+        <div className='mt-6 flex flex-wrap gap-2 xs:gap-8'>
           {technologies.map((item) => (
             <TechCard key={item.title} {...item} />
           ))}
