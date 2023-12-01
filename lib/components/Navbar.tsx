@@ -90,8 +90,8 @@ const Navbar = () => {
         <button
           onClick={() => window.open('/resume.pdf', '_blank')}
           className="p-2 text-2xl text-black font-semibold tracking-wide border-2 border-black
-                  hover:text-beige hover:border-beige hover:shadow-md hover:shadow-beige
-                    hover:-translate-y-1 rounded-lg whitespace-nowrap transition duration-300 lg:block hidden"
+                    hover:shadow-md hover:shadow-black hover:-translate-y-1 rounded-lg
+                    whitespace-nowrap transition duration-300 lg:block hidden"
         >
           Resume
         </button>
@@ -173,9 +173,10 @@ const Navbar = () => {
                 <motion.li variants={itemVariants}>
                   <button
                     onClick={() => window.open('/resume.pdf', '_blank')}
-                    className="p-2 sm:text-6xl text-[40px] text-black font-bold sm:leading-[5rem] leading-10 tracking-wide
-                              border-4 border-black hover:text-beige hover:border-beige hover:shadow-md hover:shadow-beige
-                              hover:-translate-y-1 rounded-lg whitespace-nowrap transition duration-300"
+                    className="p-2 sm:text-6xl text-[40px] text-black font-bold sm:leading-[5rem]
+                              leading-10 tracking-wide border-4 border-black hover:shadow-md
+                              hover:shadow-black hover:-translate-y-1 rounded-lg
+                              whitespace-nowraptransition duration-300"
                   >
                     Resume
                   </button>

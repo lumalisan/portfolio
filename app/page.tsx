@@ -1,4 +1,11 @@
-import { About, Hero, Navbar, Experience } from "@/lib/components";
+import { 
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Projects,
+} from "@/lib/components";
 
 export default function Home() {
   return (
@@ -18,11 +25,11 @@ export default function Home() {
       </div>
 
       <div id="projects">
-
+        <Projects />
       </div>
 
       <div id="contact" className="relative z-0">
-
+        <Contact />
       </div>
     </div>
   )
