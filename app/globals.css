@@ -47,6 +47,27 @@ html {
   );
 }
 
+/* Custom reveal scrolling animation */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    translate: 0 100px;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.reveal-animation {
+  animation: linear reveal both;
+  animation-range: entry 5% cover 30% !important;
+  animation-timeline: view() !important;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

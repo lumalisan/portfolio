@@ -5,6 +5,7 @@ import {
   Hero,
   Navbar,
   Projects,
+  Footer,
 } from '@/lib/components';
 
 export default function Home() {
@@ -31,6 +32,8 @@ export default function Home() {
       <div id='contact'>
         <Contact />
       </div>
+
+      <Footer />
     </>
   );
 }

@@ -11,7 +11,7 @@ const Contact = () => {
           title="What's next?"
           titleColor='beige'
         />
-        <div className='flex flex-col items-center'>
+        <div className='reveal-animation flex flex-col items-center'>
           <div className='mt-8 flex max-w-2xl flex-col items-center gap-8 text-beige'>
             <h2 className='text-4xl font-black tracking-wider lg:text-5xl'>
               Get In Touch

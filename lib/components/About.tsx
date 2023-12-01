@@ -12,7 +12,7 @@ const About = () => {
       <SectionLayout>
         <SectionTitle sectionNumber='01.' title='About Me' titleColor='beige' />
 
-        <p className='mt-4 text-xl leading-8 text-beige/90'>
+        <p className='reveal-animation mt-4 text-xl leading-8 text-beige/90'>
           Hello! I&apos;m Lisandro, and my interest in web development traces
           back to my early days, tinkering with my father&apos;s computer. This
           childhood curiosity ignited a journey that led me to become a computer
@@ -39,7 +39,7 @@ const About = () => {
           Here are a few technologies I&apos;ve been working with recently:
         </p>
 
-        <div className='mt-6 flex flex-wrap gap-2 xs:gap-8'>
+        <div className='reveal-animation mt-6 flex flex-wrap gap-2 xs:gap-8'>
           {technologies.map((item) => (
             <TechCard key={item.title} {...item} />
           ))}

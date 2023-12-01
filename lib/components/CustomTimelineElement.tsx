@@ -1,7 +1,6 @@
 'use client';
 
-import { memo, useRef } from 'react';
-import { useInView } from 'framer-motion';
+import { memo } from 'react';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -25,15 +24,12 @@ const CustomTimelineElement = ({
   jobDescription,
   position,
 }: Props) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, {
-    once: true,
-    amount: 0.5,
-  });
-  const isSmallDevice = useBetterMediaQuery('only screen and (max-width : 1170px)');
+  const isSmallDevice = useBetterMediaQuery(
+    'only screen and (max-width : 1170px)'
+  );
 
   return (
-    <div ref={ref} className='mb-5'>
+    <div className='reveal-animation mb-5'>
       <VerticalTimelineElement
         contentStyle={{
           background: '#363062',
@@ -60,8 +56,8 @@ const CustomTimelineElement = ({
             '0 0 0 4px #afafafd2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05)',
         }}
         icon={<FontAwesomeIcon icon={icon} />}
-        visible={isInView}
         position={position}
+        visible
       >
         <h3 className='text-xl font-bold tracking-wide text-beige'>
           {jobTitle}
