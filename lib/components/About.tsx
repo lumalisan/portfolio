@@ -30,7 +30,7 @@ const About = () => {
           <br />
           <br />
           In addition to my professional experiences, I&apos;ve embarked on
-          various personal projects, aimingto enhance my abilities and delve
+          various personal projects, aiming to enhance my abilities and delve
           into emerging web technologies. This dynamic blend of academic
           background, professional engagement, and personal exploration fuels my
           passion for creating innovative and impactful web solutions.
