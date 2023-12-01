@@ -42,7 +42,7 @@ const Experience = () => {
         <SectionLayout>
             <SectionTitle
                 sectionNumber="02."
-                title="Where I've Worked"
+                title="Experience"
                 titleColor="purple"
             />
 

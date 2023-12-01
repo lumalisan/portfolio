@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className='bg-navy'>
     <SectionLayout>
-        <SectionTitle sectionNumber='03.' title="Some Things I've Built" titleColor='beige' />
+        <SectionTitle sectionNumber='03.' title="Projects" titleColor='beige' />
     </SectionLayout>
     </div>
   )
