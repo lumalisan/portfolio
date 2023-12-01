@@ -13,7 +13,7 @@ const Contact = () => {
                         <p className='text-lg text-center'>
                             I am always open to exploring new opportunities and potential collaborations.
                             Whether you have a specific project in mind or simply want to connect, feel
-                            free to reach me out, and I'll try my best to get back to you!
+                            free to reach me out, and I&apos;ll try my best to get back to you!
                         </p>
                         <Link
                             href={'mailto:lumalisan@gmail.com'}
