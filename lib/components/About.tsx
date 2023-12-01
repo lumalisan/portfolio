@@ -2,45 +2,9 @@
 
 import Link from 'next/link';
 import TechCard from './TechCard';
-import { faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import { astroIcon, mongoDbIcon, nextJsIcon, tailwindCssIcon, typeScriptIcon } from '@/assets/icons';
 import SectionLayout from './SectionLayout';
 import SectionTitle from './SectionTitle';
-
-const technologies = [
-  {
-    title: 'JavaScript',
-    icon: faJs,
-  },
-  {
-    title: 'TypeScript',
-    icon: typeScriptIcon,
-  },
-  {
-    title: 'React',
-    icon: faReact,
-  },
-  {
-    title: 'Next.js',
-    icon: nextJsIcon,
-  },
-  {
-    title: 'Tailwind CSS',
-    icon: tailwindCssIcon,
-  },
-  {
-    title: 'Node.js',
-    icon: faNodeJs,
-  },
-  {
-    title: 'MongoDB',
-    icon: mongoDbIcon,
-  },
-  {
-    title: 'Astro',
-    icon: astroIcon,
-  },
-];
+import { technologies } from '../constants';
 
 const About = () => {
   return (

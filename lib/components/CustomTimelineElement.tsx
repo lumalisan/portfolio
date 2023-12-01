@@ -3,6 +3,7 @@ import { useInView } from "framer-motion"
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
+import classNames from "classnames";
 
 interface Props {
     date: string;
@@ -37,7 +38,7 @@ const CustomTimelineElement = ({
                 contentArrowStyle={{ borderRight: '7px solid  #363062' }}
                 //@ts-ignore
                 date={
-                    <h3 className={`${position === 'left' ? 'ml-5' : 'mr-5'} text-xl font-bold`}>
+                    <h3 className={classNames((position === 'left' ? 'ml-5' : 'mr-5'), 'text-xl font-bold')}>
                         {date}
                     </h3>
                 }

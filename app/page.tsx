@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative z-0">
+    <>
       <Navbar />
 
       <div id="intro">
@@ -28,9 +28,9 @@ export default function Home() {
         <Projects />
       </div>
 
-      <div id="contact" className="relative z-0">
+      <div id="contact">
         <Contact />
       </div>
-    </div>
+    </>
   )
 }

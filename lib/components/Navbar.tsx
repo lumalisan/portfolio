@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames'
@@ -9,29 +9,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { logotext } from '@/assets';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useClickAway } from '@uidotdev/usehooks';
-
-const navLinks = [
-  {
-    id: 'about',
-    number: '01.',
-    title: 'About',
-  },
-  {
-    id: 'experience',
-    number: '02.',
-    title: 'Experience',
-  },
-  {
-    id: 'projects',
-    number: '03.',
-    title: 'Projects',
-  },
-  {
-    id: 'contact',
-    number: '04.',
-    title: 'Contact',
-  },
-];
+import { navLinks } from '../constants';
 
 const itemVariants: Variants = {
   open: {

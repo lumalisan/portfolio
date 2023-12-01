@@ -30,6 +30,11 @@ const config: Config = {
       }
     },
   },
+  safelist: [
+    'text-purple',
+    'text-purple/50',
+    'text-beige/50',
+  ],
   plugins: [],
 }
 export default config
