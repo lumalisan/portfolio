@@ -12,8 +12,9 @@ import {
   tailwindCssIcon,
   typeScriptIcon,
 } from '@/assets/icons';
+import { NavLink } from './types/navLink';
 
-export const navLinks = [
+export const navLinks: NavLink[] = [
   {
     id: 'about',
     number: '01.',

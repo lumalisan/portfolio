@@ -5,7 +5,7 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import classNames from 'classnames';
-import useBetterMediaQuery from '../hooks/useMediaQuery';
+import { useBetterMediaQuery } from '../hooks';
 
 interface Props {
   date: string;
