@@ -14,20 +14,18 @@ const Experience = () => {
         title='Experience'
         titleColor='purple'
       />
-      <div className='mt-5'>
-        <VerticalTimeline
-          className='vertical-timeline-custom-line'
-          lineColor='#435585'
-        >
-          {experienceData.map((item, index) => (
-            <CustomTimelineElement
-              key={item.jobTitle + item.companyName}
-              position={index % 2 === 0 ? 'left' : 'right'}
-              {...item}
-            />
-          ))}
-        </VerticalTimeline>
-      </div>
+      <VerticalTimeline
+        className='vertical-timeline-custom-line'
+        lineColor='#435585'
+      >
+        {experienceData.map((item, index) => (
+          <CustomTimelineElement
+            key={item.jobTitle + item.companyName}
+            position={index % 2 === 0 ? 'left' : 'right'}
+            {...item}
+          />
+        ))}
+      </VerticalTimeline>
     </SectionLayout>
   );
 };

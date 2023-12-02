@@ -12,7 +12,7 @@ const About = () => {
       <SectionLayout>
         <SectionTitle sectionNumber='01.' title='About Me' titleColor='beige' />
 
-        <p className='reveal-animation mt-4 text-xl leading-8 text-beige/90'>
+        <p className='reveal-animation text-xl leading-8 text-beige/90'>
           Hello! I&apos;m Lisandro, and my interest in web development traces
           back to my early days, tinkering with my father&apos;s computer. This
           childhood curiosity ignited a journey that led me to become a computer
