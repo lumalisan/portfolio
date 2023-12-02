@@ -11,7 +11,7 @@ const Hero = () => {
         {/* Header Text */}
         <div
           className={
-            'absolute inset-0 top-[150px] mx-auto flex max-w-7xl flex-row items-start justify-between gap-3 px-6 sm:top-[250px] sm:px-16 lg:top-[150px] xl:top-[250px]'
+            'absolute inset-0 top-[100px] mx-auto flex max-w-7xl flex-row items-start justify-start gap-5 px-6 sm:top-[250px] sm:px-16 lg:top-[150px] lg:gap-20 xl:top-[250px]'
           }
         >
           {/* Small black dot for mobile */}
@@ -23,32 +23,33 @@ const Hero = () => {
           <div>
             <h1
               className={
-                'sm:text-md mt-2 text-base font-medium text-navy md:text-lg lg:text-xl'
+                'sm:text-md mt-2 text-base font-medium text-navy md:text-lg 2xl:text-xl'
               }
             >
               Hi, my name is{' '}
             </h1>
             <h2
               className={
-                'font-poppins mt-2 text-3xl font-black text-black sm:text-4xl md:text-5xl lg:text-7xl lg:leading-[5rem]'
+                'font-poppins mt-2 text-3xl font-black text-black sm:text-4xl md:text-5xl 2xl:text-7xl 2xl:leading-[5rem]'
               }
             >
               Lisandro Rocha.
             </h2>
             <h3
               className={
-                'font-poppins mt-2 text-3xl font-black text-black/90 sm:text-4xl md:text-5xl lg:text-7xl lg:leading-[5rem]'
+                'font-poppins mt-2 text-3xl font-black text-black/90 sm:text-4xl md:text-5xl 2xl:text-7xl 2xl:leading-[5rem]'
               }
             >
               I build things for the web.
             </h3>
             <p
               className={
-                'sm:text-md mt-2 text-base font-medium text-black/90 md:text-lg lg:text-xl'
+                'sm:text-md mt-2 text-base font-medium text-black/90 md:text-lg 2xl:text-xl'
               }
             >
               I&rsquo;m a passionate software engineer with a specialization{' '}
-              <br /> in building exceptional digital experiences.
+              <br className='hidden md:block' /> in building exceptional digital
+              experiences.
             </p>
           </div>
           <div className='xxs:mt-4 flex w-[5vw] flex-col items-start justify-center sm:-ml-[3rem]'></div>
