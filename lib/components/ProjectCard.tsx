@@ -1,10 +1,5 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowUpRightFromSquare,
-  faFolder,
-} from '@fortawesome/free-solid-svg-icons';
-import { externalLinkIcon, folderIcon, gitHubIcon } from '../../assets/icons';
+import { externalLinkIcon, folderIcon, gitHubIcon } from '@/assets/icons';
 
 interface Props {
   title: string;
@@ -17,8 +12,7 @@ interface Props {
 
 const ProjectCard = ({ title, body, links }: Props) => {
   return (
-    <Link
-      href={links.deploy}
+    <div
       className='reveal-animation flex flex-col gap-4 rounded-lg bg-beige p-10
                         transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-beige'
     >
@@ -39,9 +33,14 @@ const ProjectCard = ({ title, body, links }: Props) => {
           </Link>
         </div>
       </div>
-      <h3 className='text-xl font-extrabold text-navy'>{title}</h3>
+      <Link
+        href={links.deploy}
+        className='text-xl font-extrabold text-navy transition-all duration-300 hover:text-sky-600'
+      >
+        {title}
+      </Link>
       <p className='text-lg text-navy'>{body}</p>
-    </Link>
+    </div>
   );
 };
 
