@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import TechCard from './TechCard';
 import SectionLayout from './SectionLayout';
