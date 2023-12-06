@@ -109,32 +109,24 @@ export const experienceData = [
 
 export const projects = [
   {
-    title: 'Título del proyecto',
-    body: 'Lorem ipsum dolor sit amet consectetur adipiscing elit condimentum arcu sollicitudin, volutpat natoque etiam urna ligula erat cum posuere a. A convallis dapibus commodo nunc porta consequat primis non in montes vulputate, cras risus enim ultrices lacinia quam varius mus natoque libero, velit curae nam proin pretium phasellus dui purus cum facilisi.',
+    title: 'Gif App',
+    body: 'One of my first projects, completed & deployed in June of 2022. This app allows you to explore and enjoy the world of animated GIFs. With an easy-to-use interface, you can search and discover GIFs quickly and easily. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
     links: {
-      github: '#',
-      deploy: '#',
+      github: 'https://github.com/lumalisan/gif-expert-vite',
+      deploy: 'https://lumalisan.github.io/gif-expert-vite/',
     },
   },
   {
-    title: 'Título del proyecto 2',
-    body: 'Aliquam taciti diam varius natoque tempor mus mattis, pretium magna lacinia id fames habitasse etiam suscipit, neque at dictumst ridiculus erat facilisis. Cursus tristique vivamus hac suspendisse iaculis metus, felis massa nisi viverra ultrices justo eleifend.',
+    title: 'Heroes App',
+    body: 'A slightly more advanced project, completed & deployed in June of 2022. The Heroes App is an application that allows you to explore and learn about your favorite heroes and characters. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
     links: {
-      github: '#',
-      deploy: '#',
+      github: 'https://github.com/lumalisan/heroes-app-vite',
+      deploy: 'https://heroes-app-vite.netlify.app/',
     },
   },
   {
-    title: 'Título del proyecto 3',
-    body: 'Aptent ullamcorper tortor nibh porttitor. Sodales etiam euismod lectus viverra convallis velit mollis fermentum et risus nulla magnis, imperdiet hac hendrerit at sociosqu aliquam enim pulvinar justo class ornare. A dictum platea urna purus vehicula, netus cubilia vulputate pretium, habitant egestas taciti augue.',
-    links: {
-      github: '#',
-      deploy: '#',
-    },
-  },
-  {
-    title: 'Título del proyecto 4',
-    body: 'Qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.',
+    title: 'Musicfy',
+    body: 'COMING SOON! Spotify-like application made in Astro for song playback. Includes Typescript, animations, TailwindCSS, and other technologies.',
     links: {
       github: '#',
       deploy: '#',

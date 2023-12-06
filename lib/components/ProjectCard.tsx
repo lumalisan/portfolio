@@ -21,12 +21,14 @@ const ProjectCard = ({ title, body, links }: Props) => {
         <div className='flex items-center gap-4'>
           <Link
             href={links.github}
+            target='_blank'
             className='transition duration-300 hover:text-sky-600'
           >
             {gitHubIcon}
           </Link>
           <Link
             href={links.deploy}
+            target='_blank'
             className='transition duration-300 hover:text-sky-600'
           >
             {externalLinkIcon}
@@ -35,6 +37,7 @@ const ProjectCard = ({ title, body, links }: Props) => {
       </div>
       <Link
         href={links.deploy}
+        target='_blank'
         className='text-xl font-extrabold text-navy transition-all duration-300 hover:text-sky-600'
       >
         {title}

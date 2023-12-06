@@ -23,7 +23,9 @@ const Contact = () => {
               try my best to get back to you!
             </p>
             <Link
-              href={'mailto:lumalisan@gmail.com'}
+              href={
+                'mailto:&#x6C;&#x75;&#x6D;&#x61;&#x6C;&#x69;&#x73;&#x61;&#x6E;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;'
+              }
               className='whitespace-nowrap rounded-lg border-2 border-beige p-2 text-2xl font-semibold
                                     tracking-wide text-beige transition duration-300
                                     hover:-translate-y-1 hover:shadow-md hover:shadow-beige'
