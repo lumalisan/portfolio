@@ -7,7 +7,7 @@ This project is a digital representation of my background, skills and featured p
 
 Feel free to inspect the code and see how I made it possible! 😊
 
-### Features
+## 🧠 Features
 - Personalized Presentation: Discover who I am and what my professional goals are.
 - Featured Projects: Explore some of the projects I have worked on, with details about technologies used and achievements.
 - Education and Experience: Learn about my academic background and work experience.
