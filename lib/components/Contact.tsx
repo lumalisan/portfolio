@@ -24,7 +24,7 @@ const Contact = () => {
             </p>
             <Link
               href={
-                'mailto:&#x6C;&#x75;&#x6D;&#x61;&#x6C;&#x69;&#x73;&#x61;&#x6E;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;'
+                'mailto:lumalisan@gmail.com'
               }
               className='whitespace-nowrap rounded-lg border-2 border-beige p-2 text-2xl font-semibold
                                     tracking-wide text-beige transition duration-300
