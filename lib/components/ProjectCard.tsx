@@ -19,20 +19,24 @@ const ProjectCard = ({ title, body, links }: Props) => {
       <div className='flex items-end justify-between text-2xl text-navy'>
         {folderIcon}
         <div className='flex items-center gap-4'>
-          <Link
-            href={links.github}
-            target='_blank'
-            className='transition duration-300 hover:text-sky-600'
-          >
-            {gitHubIcon}
-          </Link>
-          <Link
-            href={links.deploy}
-            target='_blank'
-            className='transition duration-300 hover:text-sky-600'
-          >
-            {externalLinkIcon}
-          </Link>
+          {links.github && (
+            <Link
+              href={links.github}
+              target='_blank'
+              className='transition duration-300 hover:text-sky-600'
+            >
+              {gitHubIcon}
+            </Link>
+          )}
+          {links.deploy && (
+            <Link
+              href={links.deploy}
+              target='_blank'
+              className='transition duration-300 hover:text-sky-600'
+            >
+              {externalLinkIcon}
+            </Link>
+          )}
         </div>
       </div>
       <Link

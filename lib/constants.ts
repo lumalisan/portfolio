@@ -128,8 +128,8 @@ export const projects = [
     title: 'Musicfy',
     body: 'COMING SOON! Spotify-like application made in Astro for song playback. Includes Typescript, animations, TailwindCSS, and other technologies.',
     links: {
-      github: '#',
-      deploy: '#',
+      github: '',
+      deploy: '',
     },
   },
 ];
