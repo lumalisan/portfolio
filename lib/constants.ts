@@ -118,7 +118,7 @@ export const projects = [
   },
   {
     title: 'Heroes App',
-    body: 'A slightly more advanced project, completed & deployed in June of 2022. The Heroes App is an application that allows you to explore and learn about your favorite heroes and characters. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
+    body: 'One of my first projects, but more advanced, completed & deployed in June of 2022. The Heroes App is an application that allows you to explore and learn about your favorite heroes and characters. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
     links: {
       github: 'https://github.com/lumalisan/heroes-app-vite',
       deploy: 'https://heroes-app-vite.netlify.app/',
