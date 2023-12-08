@@ -109,11 +109,11 @@ export const experienceData = [
 
 export const projects = [
   {
-    title: 'Gif App',
-    body: 'One of my first projects, completed & deployed in June of 2022. This app allows you to explore and enjoy the world of animated GIFs. With an easy-to-use interface, you can search and discover GIFs quickly and easily. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
+    title: 'Musicfy',
+    body: 'WIP - Spotify-like application made in Astro / React for song playback. Includes Typescript, animations, TailwindCSS, and other amazing technologies. It includes basic functionalities such as volume change, previous and next song, play-pause, fast forward and rewind songs, playlist system with songs, choice of songs from each playlist, aside menu to select playlists, among others.',
     links: {
-      github: 'https://github.com/lumalisan/gif-expert-vite',
-      deploy: 'https://lumalisan.github.io/gif-expert-vite/',
+      github: 'https://github.com/lumalisan/musicfy',
+      deploy: 'https://musicfy-v2.netlify.app/',
     },
   },
   {
@@ -125,11 +125,11 @@ export const projects = [
     },
   },
   {
-    title: 'Musicfy',
-    body: 'COMING SOON! Spotify-like application made in Astro for song playback. Includes Typescript, animations, TailwindCSS, and other technologies.',
+    title: 'Gif App',
+    body: 'One of my first projects, completed & deployed in June of 2022. This app allows you to explore and enjoy the world of animated GIFs. With an easy-to-use interface, you can search and discover GIFs quickly and easily. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
     links: {
-      github: '',
-      deploy: '',
+      github: 'https://github.com/lumalisan/gif-expert-vite',
+      deploy: 'https://lumalisan.github.io/gif-expert-vite/',
     },
   },
 ];
