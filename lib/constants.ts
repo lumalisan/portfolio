@@ -110,7 +110,7 @@ export const experienceData = [
 export const projects = [
   {
     title: 'Musicfy',
-    body: 'WIP - Spotify-like application made in Astro / React for song playback. Includes Typescript, animations, TailwindCSS, and other amazing technologies. It includes basic functionalities such as volume change, previous and next song, play-pause, fast forward and rewind songs, playlist system with songs, choice of songs from each playlist, aside menu to select playlists, among others.',
+    body: 'In Progress - Building a Spotify-like app with Astro/React. Features include volume control, song navigation, playlists, and more. Utilizing Typescript, animations, TailwindCSS, and other cutting-edge technologies. Enhance your music experience with intuitive controls and dynamic playlist selection.',
     links: {
       github: 'https://github.com/lumalisan/musicfy',
       deploy: 'https://musicfy-v2.netlify.app/',
