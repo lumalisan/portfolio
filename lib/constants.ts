@@ -1,4 +1,5 @@
 import {
+  faCar,
   faChartSimple,
   faHouseUser,
   faShield,
@@ -74,7 +75,15 @@ export const technologies = [
 
 export const experienceData = [
   {
-    date: 'March - October 2023',
+    date: 'March 2024 - Present',
+    icon: faCar,
+    jobTitle: 'React Frontend Developer',
+    companyName: 'Centauro Rent a Car (PrimeIT)',
+    jobDescription:
+      "Hired by PrimeIT, but working with one of Spain's largest car rental companies. My responsibilities include developing their new website, built from scratch using TailwindCSS, and maintaining their three web applications used at a European level.",
+  },
+  {
+    date: 'March 2023 - February 2024',
     icon: faHouseUser,
     jobTitle: 'Frontend Team Leader & Developer',
     companyName: 'PlattesGroup',
