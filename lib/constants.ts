@@ -118,6 +118,13 @@ export const experienceData = [
 
 export const projects = [
   {
+    title: 'E-Commerce Website',
+    body: 'A fully-featured e-commerce platform built with Next.js, TailwindCSS, and MongoDB. Includes a dynamic landing page, secure payment gateway, product listings, and a seamless shopping cart experience. The admin panel enables efficient management of products, orders, and customers. Powered by TypeScript, animations, and modern technologies to enhance the user experience with intuitive navigation and responsive design.',
+    links: {
+      deploy: 'https://www.jardindetramas.com/',
+    },
+  },
+  {
     title: 'Musicfy',
     body: 'In Progress - Building a Spotify-like app with Astro/React. Features include volume control, song navigation, playlists, and more. Utilizing Typescript, animations, TailwindCSS, and other cutting-edge technologies. Enhance your music experience with intuitive controls and dynamic playlist selection.',
     links: {

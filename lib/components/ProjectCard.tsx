@@ -5,7 +5,7 @@ interface Props {
   title: string;
   body: string;
   links: {
-    github: string;
+    github?: string;
     deploy: string;
   };
 }
