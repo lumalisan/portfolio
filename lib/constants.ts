@@ -119,33 +119,17 @@ export const experienceData = [
 export const projects = [
   {
     title: 'E-Commerce Website',
-    body: 'A fully-featured e-commerce platform built with Next.js, TailwindCSS, and MongoDB. Includes a dynamic landing page, secure payment gateway, product listings, and a seamless shopping cart experience. The admin panel enables efficient management of products, orders, and customers. Powered by TypeScript, animations, and modern technologies to enhance the user experience with intuitive navigation and responsive design.',
+    body: 'An e-commerce platform built with Next.js, TailwindCSS, and MongoDB for easy online shopping. It features a dynamic homepage, secure payments, clear product details, and a handy cart. The admin panel simplifies management, while TypeScript and sleek animations deliver a smooth, engaging design.',
     links: {
       deploy: 'https://www.jardindetramas.com/',
     },
   },
   {
     title: 'Musicfy',
-    body: 'In Progress - Building a Spotify-like app with Astro/React. Features include volume control, song navigation, playlists, and more. Utilizing Typescript, animations, TailwindCSS, and other cutting-edge technologies. Enhance your music experience with intuitive controls and dynamic playlist selection.',
+    body: 'In Progress - Building a Spotify-like app with Astro/React. Features include player control, song navigation, playlists, and more. Utilizing Typescript, animations, TailwindCSS, and other technologies.',
     links: {
       github: 'https://github.com/lumalisan/musicfy',
-      deploy: 'https://musicfy-v2.netlify.app/',
-    },
-  },
-  {
-    title: 'Heroes App',
-    body: 'One of my first projects, but more advanced, completed & deployed in June of 2022. The Heroes App is an application that allows you to explore and learn about your favorite heroes and characters. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
-    links: {
-      github: 'https://github.com/lumalisan/heroes-app-vite',
-      deploy: 'https://heroes-app-vite.netlify.app/',
-    },
-  },
-  {
-    title: 'Gif App',
-    body: 'One of my first projects, completed & deployed in June of 2022. This app allows you to explore and enjoy the world of animated GIFs. With an easy-to-use interface, you can search and discover GIFs quickly and easily. This small application was developed with the purpose of learning a little more about how react, vite, and other technologies work.',
-    links: {
-      github: 'https://github.com/lumalisan/gif-expert-vite',
-      deploy: 'https://lumalisan.github.io/gif-expert-vite/',
+      deploy: 'https://chillmusicfy.netlify.app/',
     },
   },
 ];
