@@ -5,9 +5,10 @@ import {
   faShield,
   faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
-import { faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import {
   astroIcon,
+  jestIcon,
   mongoDbIcon,
   nextJsIcon,
   tailwindCssIcon,
@@ -40,10 +41,6 @@ export const navLinks: NavLink[] = [
 
 export const technologies = [
   {
-    title: 'JavaScript',
-    icon: faJs,
-  },
-  {
     title: 'TypeScript',
     icon: typeScriptIcon,
   },
@@ -60,16 +57,20 @@ export const technologies = [
     icon: tailwindCssIcon,
   },
   {
+    title: 'Astro',
+    icon: astroIcon,
+  },
+  {
+    title: 'Jest',
+    icon: jestIcon,
+  },
+  {
     title: 'Node.js',
     icon: faNodeJs,
   },
   {
     title: 'MongoDB',
     icon: mongoDbIcon,
-  },
-  {
-    title: 'Astro',
-    icon: astroIcon,
   },
 ];
 
@@ -78,9 +79,9 @@ export const experienceData = [
     date: 'March 2024 - Present',
     icon: faCar,
     jobTitle: 'React Frontend Developer',
-    companyName: 'Centauro Rent a Car (PrimeIT)',
+    companyName: 'Prime IT',
     jobDescription:
-      "Hired by PrimeIT, but working with one of Spain's largest car rental companies. My responsibilities include developing their new website, built from scratch using TailwindCSS, and maintaining their three web applications used at a European level.",
+      'Built and launched a new web platform for a major Spanish car rental company using Next.js and TailwindCSS. Maintained and optimized 3+ enterprise-level applications, improving load times and accessibility compliance. Ensured cross-browser compatibility and high accessibility standards. Ensured cross-browser support and implemented Jest + React Testing Library for full test coverage.',
   },
   {
     date: 'March 2023 - February 2024',
@@ -88,7 +89,7 @@ export const experienceData = [
     jobTitle: 'Frontend Team Leader & Developer',
     companyName: 'PlattesGroup',
     jobDescription:
-      'Led the frontend team in developing a real estate management platform from the ground up using NextJS and TailwindCSS. Additionally, provided ongoing support for other created platforms.',
+      'Led small team in developing a real estate management platform from scratch using NextJS and TailwindCSS. Provided constant support for other developed platforms as well.',
   },
   {
     date: 'January 2022 - February 2023',
@@ -96,7 +97,7 @@ export const experienceData = [
     jobTitle: 'Full Stack Developer',
     companyName: 'PlattesGroup',
     jobDescription:
-      'Developed a DMS platform from scratch using React and Vite, with integration to support the Zoho Creator-based accounting platform.',
+      'Created a DMS platform from scratch with React and Vite integration to support the Zoho Creator-based accounting platform.',
   },
   {
     date: 'September - December 2021',
@@ -104,7 +105,7 @@ export const experienceData = [
     jobTitle: 'Junior Full Stack Developer',
     companyName: 'PlattesGroup',
     jobDescription:
-      'Developed a Zoho Creator-based accounting platform from scratch, seamlessly integrating and mapping accounting data to DATEV for enhanced efficiency.',
+      'Created Zoho Creator-based accounting platform from scratch and integrated and mapped accounting data to DATEV for greater efficiency.',
   },
   {
     date: 'June - August 2021',
@@ -112,7 +113,7 @@ export const experienceData = [
     jobTitle: 'Junior Full Stack Developer',
     companyName: 'Juniper',
     jobDescription:
-      'As a member of the enhancement team, I took on the responsibility of identifying and rectifying vulnerabilities, with a primary focus on addressing issues like SQL injection. Additionally, I played a pivotal role in the seamless translation of code from VB to C#, ensuring the continued robustness and compatibility of the software.',
+      'As an enhancement team member, I was assigned to identify and correct vulnerabilities with main emphasis on resolving issues such as SQL injection. I also played a major role in error-free conversion from VB to C# so that the software remained as strong and compatible as ever.',
   },
 ];
 
