@@ -12,19 +12,27 @@ interface Props {
 
 const ProjectCard = ({ title, body, links }: Props) => {
   return (
-    <div
+    <article
       className='reveal-animation flex flex-col gap-4 rounded-lg bg-beige p-10
-                        transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-beige'
+                transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-beige'
+      aria-labelledby={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
     >
       <div className='flex items-end justify-between text-2xl text-navy'>
-        {folderIcon}
-        <div className='flex items-center gap-4'>
+        <div aria-hidden='true'>{folderIcon}</div>
+        <div
+          className='flex items-center gap-4'
+          role='group'
+          aria-label='Project links'
+        >
           {links.github && (
             <Link
               href={links.github}
               target='_blank'
+              rel='noopener noreferrer'
               className='transition duration-300 hover:text-sky-600'
+              aria-label={`View ${title} source code on GitHub`}
             >
+              <span className='sr-only'>GitHub repository for {title}</span>
               {gitHubIcon}
             </Link>
           )}
@@ -32,8 +40,11 @@ const ProjectCard = ({ title, body, links }: Props) => {
             <Link
               href={links.deploy}
               target='_blank'
+              rel='noopener noreferrer'
               className='transition duration-300 hover:text-sky-600'
+              aria-label={`Visit ${title} live site`}
             >
+              <span className='sr-only'>Live site for {title}</span>
               {externalLinkIcon}
             </Link>
           )}
@@ -42,12 +53,15 @@ const ProjectCard = ({ title, body, links }: Props) => {
       <Link
         href={links.deploy}
         target='_blank'
+        rel='noopener noreferrer'
         className='text-xl font-extrabold text-navy transition-all duration-300 hover:text-sky-600'
       >
-        {title}
+        <h3 id={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+          {title}
+        </h3>
       </Link>
       <p className='text-lg text-navy'>{body}</p>
-    </div>
+    </article>
   );
 };
 

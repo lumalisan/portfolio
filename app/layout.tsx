@@ -4,6 +4,8 @@ import localFont from 'next/font/local';
 import './globals.css';
 import 'react-vertical-timeline-component/style.min.css';
 
+import { metadataValues } from '@/lib/constants';
+
 const circularStd = localFont({
   src: [
     {
@@ -37,8 +39,47 @@ const circularStd = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Lisandro Rocha',
-  description: 'Full-stack Developer Portfolio',
+  title: metadataValues.title,
+  description: metadataValues.description,
+  keywords: [
+    'Full-stack Developer',
+    'React',
+    'TypeScript',
+    'Next.js',
+    'Web Development',
+  ],
+  authors: { name: metadataValues.creatorName },
+  creator: metadataValues.creatorName,
+  openGraph: {
+    title: metadataValues.title,
+    description: metadataValues.description,
+    type: 'website',
+    locale: 'en_US',
+    url: metadataValues.siteUrl,
+    images: [
+      {
+        url: `${metadataValues.siteUrl}${metadataValues.ogImageUrl}`,
+        width: metadataValues.ogImageWidth,
+        height: metadataValues.ogImageHeight,
+        alt: metadataValues.ogImageAlt,
+      },
+    ],
+    emails: metadataValues.email,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@lumalisan69',
+    title: metadataValues.title,
+    description: metadataValues.description,
+    images: [
+      {
+        url: `${metadataValues.siteUrl}${metadataValues.ogImageUrl}`,
+        width: metadataValues.ogImageWidth,
+        height: metadataValues.ogImageHeight,
+        alt: metadataValues.ogImageAlt,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -49,7 +90,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={circularStd.className}>
-        {children}
+        <main className='min-h-screen'>{children}</main>
         <SpeedInsights />
       </body>
     </html>

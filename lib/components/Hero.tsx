@@ -4,7 +4,11 @@ import ScrollingBtnAnimated from './ScrollingBtnAnimated';
 
 const Hero = () => {
   return (
-    <section className='relative mx-auto flex h-screen w-full flex-col overflow-hidden bg-hero-mobile sm:flex-row sm:bg-hero'>
+    <section
+      className='relative mx-auto flex h-screen w-full flex-col overflow-hidden bg-hero-mobile sm:flex-row sm:bg-hero'
+      role='banner'
+      aria-labelledby='hero-title'
+    >
       {/* Header Text */}
       <div
         className={
@@ -13,32 +17,33 @@ const Hero = () => {
       >
         {/* Small black dot for mobile */}
         <div className='ml-3 mt-5 flex flex-col items-center justify-center'>
-          <div className='h-5 w-5 rounded-full bg-black' />
-          <div className='bw-gradient h-40 w-1 sm:h-80' />
+          <div className='h-5 w-5 rounded-full bg-black' aria-hidden='true' />
+          <div className='bw-gradient h-40 w-1 sm:h-80' aria-hidden='true' />
         </div>
 
         <div>
-          <h1
+          <span
             className={
-              'sm:text-md mt-2 text-base font-medium text-navy md:text-lg 2xl:text-xl'
+              'sm:text-md mt-2 block text-base font-medium text-navy md:text-lg 2xl:text-xl'
             }
           >
             Hi, my name is{' '}
-          </h1>
-          <h2
+          </span>
+          <h1
+            id='hero-title'
             className={
               'font-poppins mt-2 text-3xl font-black text-black sm:text-4xl md:text-5xl 2xl:text-7xl 2xl:leading-[5rem]'
             }
           >
-            Lisandro Rocha.
-          </h2>
-          <h3
+            Lisandro Rocha
+          </h1>
+          <h2
             className={
               'font-poppins mt-2 text-3xl font-black text-black/90 sm:text-4xl md:text-5xl 2xl:text-7xl 2xl:leading-[5rem]'
             }
           >
             I build things for the web.
-          </h3>
+          </h2>
           <p
             className={
               'sm:text-md mt-2 text-base font-medium text-black/90 md:text-lg 2xl:text-xl'
@@ -60,7 +65,7 @@ const Hero = () => {
         <Image
           priority
           src={lisandroRochaTau}
-          alt='Lisandro Rocha portait'
+          alt='Lisandro Rocha portrait'
           className='absolute bottom-0 ml-[45vw] 
             sm:w-[90vh] md:ml-[50vw] md:w-[70vh] xmd:ml-[50vw]
             lg:ml-[50vw] xl:ml-[60vw] xl:w-[100vh]'

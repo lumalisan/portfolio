@@ -134,3 +134,16 @@ export const projects = [
     },
   },
 ];
+
+export const metadataValues = {
+  title: 'Lisandro Rocha - Full-stack Developer Portfolio',
+  description:
+    'Portfolio of Lisandro Rocha, a Full-stack Developer specializing in building exceptional digital experiences with React, TypeScript, and modern web technologies.',
+  creatorName: 'Lisandro Rocha Tau',
+  siteUrl: 'https://lisandrorocha.vercel.app',
+  ogImageUrl: '/images/og-image.jpg',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Lisandro Rocha Portfolio',
+  email: 'lumalisan@gmail.com',
+};

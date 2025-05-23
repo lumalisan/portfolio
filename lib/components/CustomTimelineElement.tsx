@@ -2,8 +2,8 @@ import { memo } from 'react';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import classNames from 'classnames';
 import { useBetterMediaQuery } from '../hooks';
+import { cn } from '../utils/cn';
 
 interface Props {
   date: string;
@@ -39,7 +39,7 @@ const CustomTimelineElement = ({
         //@ts-ignore
         date={
           <h3
-            className={classNames(
+            className={cn(
               !isSmallDevice && position === 'left' ? 'ml-5' : 'mr-5',
               isSmallDevice && 'text-beige',
               'text-xl font-bold'

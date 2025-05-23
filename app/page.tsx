@@ -13,25 +13,25 @@ export default function Home() {
     <>
       <Navbar />
 
-      <div id='intro'>
+      <section id='intro' role='region' aria-label='Introduction'>
         <Hero />
-      </div>
+      </section>
 
-      <div id='about'>
+      <section id='about' role='region' aria-label='About section'>
         <About />
-      </div>
+      </section>
 
-      <div id='experience'>
+      <section id='experience' role='region' aria-label='Experience section'>
         <Experience />
-      </div>
+      </section>
 
-      <div id='projects'>
+      <section id='projects' role='region' aria-label='Projects section'>
         <Projects />
-      </div>
+      </section>
 
-      <div id='contact'>
+      <section id='contact' role='region' aria-label='Contact section'>
         <Contact />
-      </div>
+      </section>
 
       <Footer />
     </>
