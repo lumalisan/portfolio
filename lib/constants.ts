@@ -8,8 +8,9 @@ import {
 import { faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import {
   astroIcon,
+  cypressIcon,
   jestIcon,
-  mongoDbIcon,
+  mcpIcon,
   nextJsIcon,
   tailwindCssIcon,
   typeScriptIcon,
@@ -65,12 +66,12 @@ export const technologies = [
     icon: jestIcon,
   },
   {
-    title: 'Node.js',
-    icon: faNodeJs,
+    title: 'Cypress',
+    icon: cypressIcon,
   },
   {
-    title: 'MongoDB',
-    icon: mongoDbIcon,
+    title: 'MCP',
+    icon: mcpIcon,
   },
 ];
 
@@ -81,7 +82,7 @@ export const experienceData = [
     jobTitle: 'React Frontend Developer',
     companyName: 'Prime IT',
     jobDescription:
-      'Built and launched a new web platform for a major Spanish car rental company using Next.js and TailwindCSS. Maintained and optimized 3+ enterprise-level applications, improving load times and accessibility compliance. Ensured cross-browser compatibility and high accessibility standards. Ensured cross-browser support and implemented Jest + React Testing Library for full test coverage.',
+      'Developed and released a new web platform in Next.js and TailwindCSS for a large Spanish car hire company. Ensured that 3+ enterprise applications were kept manageable and consistent with accessibility standards and page load times. Guaranteed cross-browser compatibility and full test coverage with Jest + React Testing Library.',
   },
   {
     date: 'March 2023 - February 2024',
@@ -120,17 +121,31 @@ export const experienceData = [
 export const projects = [
   {
     title: 'E-Commerce Website',
-    body: 'An e-commerce platform built with Next.js, TailwindCSS, and MongoDB for easy online shopping. It features a dynamic homepage, secure payments, clear product details, and a handy cart. The admin panel simplifies management, while TypeScript and sleek animations deliver a smooth, engaging design.',
+    body: 'An e-commerce platform built with Next.js, TailwindCSS, and MongoDB so you can browse with ease. Has a beautiful home page design, secure payment options, clear product details and a handy cart. The admin panel makes for easy management, while TypeScript and smooth animations provide a first-class experience.',
     links: {
       deploy: 'https://www.jardindetramas.com/',
     },
   },
   {
     title: 'Musicfy',
-    body: 'In Progress - Building a Spotify-like app with Astro/React. Features include player control, song navigation, playlists, and more. Utilizing Typescript, animations, TailwindCSS, and other technologies.',
+    body: 'Spotify like app with Astro/React. Features include player control, song navigation, playlists, and more. Created using Typescript, animations, TailwindCSS, Supabase w/ PostgresSQL, Astro endpoints, accessibility and responsiveness in mind. Try it on mobile for a great experience!',
     links: {
       github: 'https://github.com/lumalisan/musicfy',
       deploy: 'https://chillmusicfy.netlify.app/',
+    },
+  },
+  {
+    title: 'Portfolio',
+    body: 'My personal portfolio website (yes, this one) built with Next.js, TailwindCSS, TypeScript and Framer Motion. All made with a focus on performance and accessibility. It features a responsive design that looks great on all devices, try it on your phone!',
+    links: {
+      github: 'https://github.com/lumalisan/portfolio',
+    },
+  },
+  {
+    title: 'MCP Collection',
+    body: 'A collection of custom-built Model Context Protocol (MCP) servers, showcasing how LLMs can securely and efficiently access diverse data sources and tools. Features practical examples, like an MCP for the Pokémon API, designed to provide structured context and enhance LLM capabilities for more intelligent AI applications.',
+    links: {
+      github: 'https://github.com/lumalisan/mcp-collection',
     },
   },
 ];

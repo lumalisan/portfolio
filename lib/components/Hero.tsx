@@ -66,7 +66,7 @@ const Hero = () => {
           priority
           src={lisandroRochaTau}
           alt='Lisandro Rocha portrait'
-          className='absolute bottom-0 ml-[45vw] 
+          className='absolute bottom-0 ml-[40vw] sm:ml-[45vw] 
             sm:w-[90vh] md:ml-[50vw] md:w-[70vh] xmd:ml-[50vw]
             lg:ml-[50vw] xl:ml-[60vw] xl:w-[100vh]'
         />

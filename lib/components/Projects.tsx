@@ -10,7 +10,7 @@ const Projects = () => {
         <SectionTitle sectionNumber='03.' title='Projects' titleColor='beige' />
 
         {/* Grid Layout */}
-        <div className='grid gap-4 [grid-template-columns:repeat(auto-fill,_minmax(300px,_1fr))]'>
+        <div className='grid gap-4 [grid-template-columns:repeat(auto-fill,_minmax(250px,_1fr))]'>
           {/* Cards */}
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />

@@ -6,15 +6,15 @@ interface Props {
   body: string;
   links: {
     github?: string;
-    deploy: string;
+    deploy?: string;
   };
 }
 
 const ProjectCard = ({ title, body, links }: Props) => {
   return (
     <article
-      className='reveal-animation flex flex-col gap-4 rounded-lg bg-beige p-10
-                transition duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-beige'
+      className='reveal-animation flex flex-col gap-4 rounded-lg bg-beige p-6 transition
+                duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-beige md:p-10'
       aria-labelledby={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
     >
       <div className='flex items-end justify-between text-2xl text-navy'>
@@ -51,7 +51,7 @@ const ProjectCard = ({ title, body, links }: Props) => {
         </div>
       </div>
       <Link
-        href={links.deploy}
+        href={links.deploy || links.github || '#'}
         target='_blank'
         rel='noopener noreferrer'
         className='text-xl font-extrabold text-navy transition-all duration-300 hover:text-sky-600'

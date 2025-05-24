@@ -24,12 +24,12 @@ const Navbar = () => {
       <nav
         className={cn(
           isNavbarVisible ? 'top-0' : '-top-32',
-          'xxs:h-[12vh] fixed z-20 flex w-full items-center bg-blue bg-opacity-90 px-6 py-2 backdrop-blur-sm backdrop-filter transition-all duration-300 lg:px-16'
+          'xxs:h-[12vh] fixed z-20 flex w-screen items-center bg-blue bg-opacity-90 px-6 py-2 backdrop-blur-sm backdrop-filter transition-all duration-300 lg:px-16'
         )}
         role='navigation'
         aria-label='Main navigation'
       >
-        <div className='mx-auto flex w-full max-w-7xl items-center justify-between'>
+        <div className='mx-auto flex w-full max-w-7xl items-center justify-between gap-4'>
           {/* Link with logo */}
           <Link
             href='#intro'
