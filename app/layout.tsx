@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import localFont from 'next/font/local';
 import './globals.css';
 import 'react-vertical-timeline-component/style.min.css';
@@ -91,7 +90,6 @@ export default function RootLayout({
     <html lang='en'>
       <body className={circularStd.className}>
         <main className='min-h-screen'>{children}</main>
-        <SpeedInsights />
       </body>
     </html>
   );
