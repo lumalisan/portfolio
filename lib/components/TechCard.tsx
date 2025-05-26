@@ -16,7 +16,7 @@ const TechCard = ({ title, icon }: Props) => {
   return (
     <div
       className='reveal-animation rounded-lg border-2 border-beige bg-navy text-beige transition duration-300 hover:-translate-y-1 hover:bg-transparent hover:shadow-md hover:shadow-beige'
-      role='article'
+      role='listitem'
       aria-label={`Technology: ${title}`}
     >
       <div className='flex flex-col items-center justify-center gap-3 p-8 text-center'>

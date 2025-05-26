@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header role='banner'>
       <a
-        href='#main-content'
+        href='#about'
         className='sr-only focus:not-sr-only focus:fixed focus:left-0 focus:top-0 focus:z-50 focus:bg-beige focus:p-4 focus:text-purple'
       >
         Skip to main content

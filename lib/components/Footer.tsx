@@ -7,11 +7,11 @@ const Footer = () => {
       className='flex h-16 w-full place-items-center justify-center bg-indigo-950'
       role='contentinfo'
     >
-      <h4 className='text-beige'>
+      <span className='text-beige'>
         Made with{' '}
         <FontAwesomeIcon icon={faHeart} aria-label='love' role='img' /> by
         Lisandro Rocha
-      </h4>
+      </span>
     </footer>
   );
 };
